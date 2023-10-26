@@ -1,0 +1,55 @@
+/* Estilos para el botón de cambio de modo en modo oscuro */
+.switchDark {
+    background-color: #f88010; /* Color de fondo en modo oscuro */
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 1rem; /* Borde redondeado */
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilos para los íconos dentro del botón en modo oscuro */
+.switchDark span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    color: #fff; /* Color del ícono en modo oscuro */
+    background: none;
+}
+
+/* Estilos para el círculo de fondo del botón en modo oscuro */
+.switchDark::after {
+    display: block;
+    background: #fffbf5; /* Color de fondo del círculo en modo oscuro */
+    width: 1.8rem;
+    height: 1.8rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 50%; /* Forma de círculo */
+    transition: all 1s ease;
+    box-shadow: 0 0 1.5px 1.5px rgba(0, 0, 0, 0.5);
+    content: "";
+}
+
+/* Estilos para el botón cuando está activo (modo claro) */
+.switchDark.active {
+    background: #0f0f0f; /* Color de fondo cuando está activo en modo oscuro */
+}
+
+/* Estilos para el círculo de fondo cuando el botón está activo (modo claro) */
+.switchDark.active::after {
+    left: unset;
+    right: 0; /* Cambia la posición del círculo cuando está activo en modo oscuro */
+}
+
+/* Estilos generales para el cuerpo de la página en modo oscuro */
+body.dark {
+    background: #1e1f1e; /* Color de fondo en modo oscuro */
+    color: #fff; /* Color del texto en modo oscuro */
+}

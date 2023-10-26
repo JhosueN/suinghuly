@@ -1,0 +1,229 @@
+/* Establece un estilo predeterminado para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos para el contenedor principal de la página */
+.view1 {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.linkmenu {
+    color: rgba(0, 153, 255, 1);
+    
+}
+
+/* Estilos para la barra de navegación */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    padding: 15px 0;
+}
+
+/* Estilos para el título del sitio en la barra de navegación */
+nav p {
+    font-style: normal;
+    font-weight: bold;
+    font-weight: 500;
+    font-size: 40px;
+    text-decoration: underline;
+    color: rgba(0, 153, 255, 1);
+}
+
+nav ul li {
+    font-weight: bold;
+}
+
+/* Estilos para el título del sitio y el encabezado */
+nav > p, header {
+    margin-left: 40px;
+}
+
+/* Estilos para los elementos de la lista de navegación */
+li {
+    font-size: 18px;
+    display: inline-block;
+    padding: 0 25px;
+    cursor: pointer;
+    transition: 0.1s ease 0s;
+    font-weight: 500;
+}
+
+/* Estilos al pasar el mouse sobre los elementos de la lista de navegación */
+li:hover {
+    color: rgba(0, 153, 255, 1);
+}
+
+/* Estilos para el encabezado */
+header {
+    text-align: left;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+
+/* Estilos para el título principal */
+h1 {
+    line-height: 75px;
+    font-weight: 500;
+    font-size: 64px;
+    font-style: normal;
+}
+
+/* Estilos para el párrafo en el encabezado */
+header p {
+    width: 757px;
+    height: 70px;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 21px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+
+
+/* Estilos al pasar el mouse sobre el botón en el encabezado */
+header button:hover {
+    box-shadow: 1px 1px 7px #333;
+}
+
+/* Estilos para la ilustración o imagen principal */
+.ilustracion {
+    position: absolute;
+    top: 10%;
+    max-width: 100%; /* Establece un ancho máximo del 100% del contenedor */
+    height: 50%; /* Mantiene la proporción de aspecto original */
+    right: 5%;
+    transform: translateY(30px);
+}
+
+/* Estilos para la imagen de onda (wave) en la parte inferior */
+.wave {
+    position: absolute;
+    bottom: 0;
+    max-width: 100%; /* Establece un ancho máximo del 100% del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto original */
+}
+
+.link { 
+	color: #ffffff; 	
+	text-decoration: none;
+}
+
+.custom-link {
+    color: #fff; /* Establece el color del enlace en blanco */
+    text-decoration: none; /* Quita la subrayado de los enlaces */
+}
+/* Estilos para los elementos de la lista de navegación en pantallas pequeñas (menú desplegable) */
+@media (max-width: 768px) {
+    nav ul {
+        display: none; /* Oculta la lista de navegación en pantallas pequeñas */
+    }
+
+    /* Estilos para el botón de menú en pantallas pequeñas */
+    nav .switchDark {
+        display: block; /* Muestra el botón de menú en pantallas pequeñas */
+    }
+
+    /* Estilos adicionales para el menú desplegable */
+    nav .switchDark.active ul {
+        display: flex; /* Muestra la lista de navegación cuando el menú está activo */
+        flex-direction: column; /* Alinea los elementos en una columna */
+    }
+}
+/* Establece el color del enlace cuando se visita */
+a:visited {
+    color: inherit;
+}
+
+/* Establece el color del enlace cuando se encuentra activo (clic) */
+a:active {
+    color: inherit;
+}
+
+/* Elimina el subrayado de los enlaces y establece el color del texto al heredar */
+a {
+    text-decoration: none; /* Elimina el subrayado */
+    color: inherit; /* Hereda el color del texto del elemento padre */
+}
+
+.informa {
+    text-align: left;
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 20%;
+    max-width: 90%;
+}
+/* Estilos para posision de footer */
+footer {
+    position: absolute;
+    margin-left: 3%;
+    top: 93%;
+}
+
+footer ul li{    
+    font-weight: bold;
+    font-size: 17px;
+    font-style:normal;
+}
+
+footer ul li:hover {
+    color: rgb(247, 250, 250);
+}
+
+/* Estilos para el botón en el footer */
+.button2 {
+    background-color: rgba(0, 153, 255, 1);
+    width: 150px;
+    height: 40px;
+    border: 0;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 28px;
+    font-style: normal;
+    color: #fff;
+    transition: 0.4s ease 0s;
+}
+
+.view9 {    
+    position: relative;    
+    min-height: 5vh;   
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;    
+    margin-top: 88%;   
+}
+
+.footer2 {
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 89%;
+    top: 95%;
+}
+
+.bloquesimg {	
+	clear: both;
+	width: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	padding-right: 25px;
+	text-align: center;	
+}
